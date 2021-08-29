@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    function greeting(){
+       var getName = prompt("Please tell your name"); 
+       alert("Welcome to My website" +  getName +"!");
+    }
+    </script>
+</head>
+<body onload="greeting()">
+    <img arc="" onload="">
+</body>
+</html>
+$(document).ready(function()){
+    if ($("#course-url").find("option:selected").val()=='other'){
+        $("#course-url-other").prop("disabled",false);
+        $("#course-url-other").prop("required",true);
+    } 
+    
+        
+}
+$("#course-url").change(function()){
+    var optionSelected = $(this).find("option:selected");
+    var valueSelected = optionSelected.val();
+    // var textSelected = optionSelected.text();
+    if (valueSelected = 'other'){
+        $("#course-url-other").prop("disabled",false);
+        $("#course-url-other").prop("required",true);
+        $("#course-url-other").focus();
+    } else{
+        $("#course-url-other").prop("disabled",true);
+        $("#course-url-other").prop("required",false);
+        $("#course-url-other").val("");
+    }
+
+}
+
+
+
+
+
+
+
