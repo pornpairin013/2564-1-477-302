@@ -1,0 +1,22 @@
+<html>
+<head>
+    
+</head>
+<body>
+    <button onclick="chkgreeting()">Click Me</button>
+    <script>
+    function chkgreeting(){
+        //nested if >ifซ้อนif
+        var time = new Date().getHours();
+        if (time < 12) {
+            greeting = "Good morning";
+        } else if (time < 20){
+            greeting = "Good day";
+        } else {
+            greeting ="Good evening"
+        }
+        alert(greeting);
+    }
+    </script>
+</body>
+</html>
