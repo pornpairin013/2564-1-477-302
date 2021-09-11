@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DESCRIPTION">
+    <title>Document</title>
+  
+    <!--กำหนดฟอนต์เว็ปของเลาาา-->
+    <style>
+      body {color:#000000; font-family: 'Pridi', serif;
+  font-size: 1em; }
+      p { font-weight: normal; text-align:center;}
+      a { font: normal 2em;}
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@300&display=swap" rel="stylesheet">
+  
+</head>
+
+
+
+<body>
+
+       <!--head web--> 
+  <h2> 
+     <div align="center">
+       <img src="Pic-3.png" width="250" height="250"  > &nbsp; 
+     </div>
+ </h2>
+ 
+    <!--เมนู-->
+  <style>
+   ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+   }
+  
+    li {
+      float: left;
+    }
+  
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+  
+    li {
+    border-right: 1px solid #bbb;
+   }
+   .active {
+      background-color: hsl(32, 89%, 32%);
+    }
+  </style>
+  
+  <ul>
+    <li><a href="Quiz2-6210513013.html">Home</a></li>
+    <li><a href="Pege-2.html">Service</a></li>
+    <li><a href="#contact">Contact</a></li>
+    
+    <div align="right">
+        <button id="show"> <li style="float:right"><a class="active" href="#about" >Login</a></li></button>
+   </div>
+        <dialog id="quiz2">
+    <h4>Log in.</h4>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Username</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Password</span>
+            <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+        </div>
+        <p><button onclick="saveUsername()" type="button">Save</button>
+            <button onclick="delUsername()" type="button">Delete</button></p>
+         <button id="hide">Close</button>
+    </dialog>
+        </div>
+        </div>
+        <div class="col-6">
+</div>
+    </ul>
+
+</ul>
+ <br>
+
+    <script>
+        (function() {
+            var dialog = document.getElementById('quiz2');
+            document.getElementById('show').onclick = function() {
+                dialog.showModal();
+            };
+            document.getElementById('hide').onclick = function() {
+                dialog.close();
+            };
+
+        })();
+    </script>
+
+
+
+  </ul>
+</ul>
+ <br>
+
+ <table  style=" border:2px DASHED #ffffff;background-color: #fafafa" width=1000><tbody><tr><td align="center" valign="middle" style="background-color: #ffffff"><table border="0" cellspacing="8" cellpadding="8"  ><tbody><tr><td " style=" border:2px DASHED #000000;background-color: #ffffff"><font size=3>
+<!--log in-->
+<form>
+    <h3>ประวัติทาส</h3>
+        <label for="user-name">ชื่อ</label>
+        <input type="text" id="username" placeholder="ชื่อเจ้าของ">
+       
+        <label for="user-fname">นามสกุล</label>
+        <input type="text" id="userfname"placeholder="นามสกุลเจ้าของ">  &nbsp;
+       
+        <label for="user-name">ชื่อเล่นทาส</label>
+        <input type="text" id="usernname" placeholder="ชื่อเล่นเจ้าของ">
+    <br>
+    <br>
+   
+
+    <h3>ที่อยู่</h3>
+        <label for="user-name">หมู่ที่</label>
+        <input type="text" id="home"><br>
+        
+        <label for="user-name">ซอย</label>
+        <input type="text" id="home" ><br>
+        
+        <label for="user-name">ถนน</label>
+        <input type="text" id="home" ><br>
+        
+        <label for="user-name">อำเภอ</label>
+        <input type="text" id="home" ><br>
+        
+        <label for="user-name">จังหวัด</label>
+        <input type="text" id="home" ><br>
+        
+        <label for="user-name">รหัสไปรษณีย์</label>
+        <input type="text" id="home" ><br>
+    <br>
+    <br>
+
+
+    <!--กรอกสัตว์เลี้ยง-->
+    <h3>ประวัติเจ้านาย</h3>
+        <label for="user-name">ชื่อ</label>
+        <input type="text" id="username" placeholder="ชื่อเจ้านาย"> &nbsp;
+        
+        <label for="user-name">ชนิด</label>
+        <select name="type">ชนิดเจ้านาย
+            <option value="1">น้องหมา</option> 
+            <option value="0">น้องแมว</option>
+            <option value="0">2 ปี</option>
+        </select>
+        
+        <label for="user-name">เจ้านายคือ</label>
+        <input type="text" id="type" placeholder="พันธุ์"> &nbsp;
+        
+        <label for="user-name">เพศ</label>
+        <input type="radio" name="user_type">ผู้ชาย
+        <input type="radio" name="user_type">ผู้หญิง &nbsp;
+
+        <label for="user-name">อายุ</label>
+        <select name="type">อายุปี
+            <option value="1">0 ปี</option> 
+            <option value="0">1 ปี</option>
+            <option value="0">2 ปี</option>
+            <option value="0">3 ปี</option>
+            <option value="0">4 ปี</option>
+            <option value="0">5 ปี</option>
+            <option value="0">6 ปี</option>
+            <option value="0">7 ปี</option>
+        </select>
+
+        <select name="type">อายุเดือน
+            <option value="1">0 เดือน</option> 
+            <option value="0">1 เดือน</option>
+            <option value="0">2 เดือน</option>
+            <option value="0">3 เดือน</option>
+            <option value="0">4 เดือน</option>
+            <option value="0">5 เดือน</option>
+            <option value="0">6 เดือน</option>
+            <option value="0">7 เดือน</option>
+            <option value="0">8 เดือน</option>
+            <option value="0">9 เดือน</option>
+            <option value="0">10 เดือน</option>
+            <option value="0">11 เดือน</option>
+            <option value="0">12 เดือน</option>
+            <br>
+        </select>
+    </form> 
+    <br>
+
+
+
+    <!--Golocation-->
+<h3 id="demo">โปรดเลือกสถานที่ รับ-ส่ง เจ้านายของคุณ</h3>
+   <button onclick="getLocation()">Try It</button>
+   <div id="mapholder"></div>
+
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoKoNVKdXRrp8YDgara5W1m2nfTU1dG5g&callback=initMap"
+ type="text/javascript"></script>
+   <script>
+   var x = document.getElementById("demo");
+   function getLocation() {
+       if (navigator.geolocation) {
+           /* glat = prompt("Enter your latitude", 0);
+           glon = prompt("Enter your longitude", 0);
+           showPosition(glat, glon); */
+           navigator.geolocation.getCurrentPosition(showPosition, showError);
+       } else {
+           x.innerHTML = "Geolocation is not supported by this browser.";
+       }
+   }
+
+   function showPosition(position) {
+       lat = position.coords.latitude;
+       lon = position.coords.longitude;
+       //glat = [6.998068, 6.998838] ;
+       //glon = [100.482465, 100.480831];
+       latlon = new google.maps.LatLng(lat, lon)
+       mapholder = document.getElementById('mapholder')
+       mapholder.style.height = '350px';
+       mapholder.style.width = '500px';
+
+       var myOptions = {
+           center: latlon,
+           zoom:16,
+           mapTypeId:google.maps.MapTypeId.ROADMAP,
+           mapTypeControl:false,
+           navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+       }
+
+       var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+       var marker = new google.maps.Marker({position:latlon, map:map, title:"You are here!"});
+   }
+
+   function showError(error) {
+      switch(error.code) {
+          case error.PERMISSION_DENIED:
+              x.innerHTML = "User denied the request for Geolocation."
+              break;
+          case error.POSITION_UNAVAILABLE:
+              x.innerHTML = "Location information is unavailable."
+              break;
+          case error.TIMEOUT:
+              x.innerHTML = "The request to get user location timed out."
+              break;
+          case error.UNKNOWN_ERROR:
+              x.innerHTML = "An unknown error occurred."
+              break;
+      }
+  }
+  </script>
+</td></tr></tbody></table></td></tr></tbody></table>
+
+<link rel="stylesheet" href="Pege-2.html">
+    <script>
+    function clickCounter() {
+        if(typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+                localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+        }
+    }
+    </script>
+
+   <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+   <div id="result"></div>
+
+</td></tr></tbody></table></td></tr></tbody></table>
+</body>
+</html>
